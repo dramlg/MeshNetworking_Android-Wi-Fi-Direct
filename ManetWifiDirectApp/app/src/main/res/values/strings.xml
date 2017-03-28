@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WifiDirectPrueba</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_activity_pantalla_espontanea_inicio">
+        ActivityPantallaEspontaneaInicio
+    </string>
+    <string name="title_activity_activity_menu_inicial">ActivityMenuInicial</string>
+    <string name="title_activity_list_view_usuarios">ListViewUsuarios</string>
+    <string name="title_activity_activity_configuracion">ActivityConfiguracion</string>
+    <string name="title_activity_activity_chat">ActivityChat</string>
+    <string name="title_activity_activity_ayuda">ActivityAyuda</string>
+    <string name="title_activity_activity_list_view_cloud_clusterhead">
+        ActivityListViewCloudClusterhead
+    </string>
+</resources>

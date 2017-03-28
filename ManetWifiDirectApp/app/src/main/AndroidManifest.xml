@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Manet.AppManet.ManetWifiDirectProyecto"
+    android:versionName="1.2"
+    android:revisionCode="3">
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:smallScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true"
+        android:normalScreens="true"
+        ></supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconomanetpeqeno"
+        android:label="WiFi Direct MANET"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="Manet Network" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".WiFiDirect.WiFiDirectBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <activity
+            android:name=".Activities.ActivityListViewUsuarios"
+            android:label="@string/title_activity_list_view_usuarios"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Activities.ActivityConfiguracion"
+            android:label="@string/title_activity_activity_configuracion"
+            android:parentActivityName=".Activities.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Manet.AppManet.ManetWifiDirectProyecto.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.ActivityChat"
+            android:label="@string/title_activity_activity_chat"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activities.ActivityListViewUsuarios"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Manet.AppManet.ManetWifiDirectProyecto.Activities.ActivityListViewUsuarios" />
+        </activity>
+        <activity
+            android:name=".Activities.ActivityAyuda"
+            android:label="@string/title_activity_activity_ayuda"
+            android:parentActivityName=".Activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Manet.AppManet.ManetWifiDirectProyecto.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.ActivityListViewCloudClusterhead"
+            android:label="@string/title_activity_activity_list_view_cloud_clusterhead"
+            android:parentActivityName=".Activities.ActivityChat"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Manet.AppManet.ManetWifiDirectProyecto.Activities.ActivityChat" />
+        </activity>
+    </application>
+
+</manifest>

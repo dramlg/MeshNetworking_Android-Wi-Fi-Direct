@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Manet.AppManet.ManetWifiDirectProyecto.Activities.ActivityChat">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout5">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextPersonName"
+            android:layout_weight="1"
+            android:background="#24547a"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="28dp"
+            android:textColor="#eeeeee"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonVerCloudCH"
+            android:layout_weight="0"
+            android:drawableTop="@android:drawable/stat_sys_download"
+            android:background="#74009bee"
+            android:paddingTop="15dp"/>
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:drawableTop="@android:drawable/stat_sys_upload"
+            android:background="#6f8eee"
+            android:id="@+id/buttonEnviarFichero"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout5"
+        android:id="@+id/frameLayout2"
+        android:layout_above="@+id/linearLayout6">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewMensajesChat"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout6">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editTextMensajeAEnviar"
+            android:background="#4c48adff"
+            android:layout_weight="1"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@android:drawable/ic_menu_send"
+            android:id="@+id/buttonEnviarMensaje"
+            android:background="#24547a"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

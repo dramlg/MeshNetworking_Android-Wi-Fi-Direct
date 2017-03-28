@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Manet.AppManet.ManetWifiDirectProyecto.Activities.ActivityListViewUsuarios">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|top"></LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rol: "
+            android:id="@+id/textView3"
+            android:layout_weight="0.27"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:background="#24547a"
+            android:textColor="#eeeeee"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editTextRolDispositivo"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/buttonActualizarListView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#422497ff"
+            android:layout_above="@+id/listViewUsuarios"
+            android:layout_weight="0.74"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"/>
+
+        <Button
+            style="@style/ButtonBarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@android:drawable/ic_popup_sync"
+            android:paddingStart="12dp"
+            android:id="@+id/buttonActualizarListView"
+            android:background="#24547a"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="359dp"
+        android:id="@+id/listViewUsuarios"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:background="#00f9faff"
+        android:focusable="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</RelativeLayout>

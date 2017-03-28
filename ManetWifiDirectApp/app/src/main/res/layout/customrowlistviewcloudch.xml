@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="108dp"
+        android:id="@+id/imageViewCustomVectorCloud"
+        android:src="@android:drawable/ic_menu_slideshow"
+        android:paddingLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#ffffff"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewCustomVectorCloud"
+
+        android:paddingLeft="10dp"
+        android:textColor="#ce010101"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewCustomVectorCloud"
+        android:layout_toEndOf="@+id/imageViewCustomVectorCloud" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imagenMensajesSinLeer"
+        android:layout_weight="0.15"
+        android:layout_marginRight="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_alignBottom="@+id/textViewCustomVectorCloud"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tamaño (kB): "
+        android:textStyle="italic"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textViewCustomVectorCloud"
+        android:layout_toLeftOf="@+id/textViewTamano"
+        android:layout_toStartOf="@+id/textViewTamano" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:textStyle="normal"
+        android:id="@+id/textViewTamano"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toLeftOf="@+id/imagenMensajesSinLeer"
+        android:layout_toStartOf="@+id/imagenMensajesSinLeer" />
+
+</RelativeLayout>
